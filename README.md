@@ -1,5 +1,7 @@
 ## Erlang Dockerfile
 
+[![nodesource/node](http://dockeri.co/image/efcasado/erlang)](https://registry.hub.docker.com/u/efcasado/erlang/)
+
 This repository contains **Dockerfile** of [Erlang](http://www.erlang.org/) for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/efcasado/erlang/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
 
 
