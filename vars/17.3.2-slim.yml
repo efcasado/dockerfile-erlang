@@ -1,0 +1,5 @@
+---
+base_image    : "ubuntu:precise"
+erlang_version: "17.3.2"
+erlang_repo   : "http://packages.erlang-solutions.com/ubuntu/pool"
+erlang_package: "erlang-base_${ERLANG_VERSION}-1~ubuntu~precise_amd64.deb"

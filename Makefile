@@ -1,6 +1,8 @@
 .PHONY: all generate build info gen-latest $(GEN_VSNS) $(BLD_VSNS)
 
-VERSIONS := 17.1 \
+VERSIONS := 17.3 \
+			17.3.2-slim \
+			17.1 \
 			17.1-slim
 LATEST   := $(firstword $(VERSIONS))
 
