@@ -19,6 +19,17 @@ This repository contains **Dockerfile** of [Erlang](http://www.erlang.org/) for 
 
     docker run -it --rm efcasado/erlang
 
-#### Run `erl`
+##### Run `erl`
 
     docker run -it --rm efcasado/erlang erl
+
+
+### Flavours (`normal` and `slim`)
+
+Most Erlang versions are available in two flavors: slim and normal.
+Normal images are built from the `esl-erlang` package provided by
+`Erlang Solutions` and include the Erlang/OTP platform and all of
+its applications. On the other hand, `slim` images are built from
+the `erlang-base` package, which includes the Erlant/OTP platform
+and a minimal set of applications (i.e. `compiler`, `erts`, `kernel`,
+`ose`, `sasl` and `stdlib`).
