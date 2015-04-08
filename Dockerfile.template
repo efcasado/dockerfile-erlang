@@ -6,12 +6,12 @@
 ###
 ### Author: Enrique Fernandez <efcasado@gmail.com>
 ###========================================================================
-FROM       ubuntu:precise
+FROM       {{base_image}}
 MAINTAINER Enrique Fernandez <efcasado@gmail.com>
 
-ENV ERLANG_VERSION 17.1
-ENV ERLANG_REPO    http://packages.erlang-solutions.com/site/esl/esl-erlang/FLAVOUR_3_general
-ENV ERLANG_PACKAGE esl-erlang_${ERLANG_VERSION}-1~ubuntu~precise_amd64.deb
+ENV ERLANG_VERSION {{erlang_version}}
+ENV ERLANG_REPO    {{erlang_repo}}
+ENV ERLANG_PACKAGE {{erlang_package}}
 
 ENV EPMD_PORT            4369
 ENV DIST_ERLANG_PORT_MIN 9100
