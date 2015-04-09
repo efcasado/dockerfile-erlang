@@ -1,6 +1,7 @@
 .PHONY: all generate build info gen-latest $(GEN_VSNS) $(BLD_VSNS)
 
-VERSIONS := 17.5 \
+VERSIONS := 18.0-rc1 \
+			17.5 \
 			17.3 \
 			17.3.2-slim \
 			17.1 \
