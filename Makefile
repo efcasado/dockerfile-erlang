@@ -5,7 +5,8 @@ VERSIONS := 18.0-rc1 \
 			17.3 \
 			17.3.2-slim \
 			17.1 \
-			17.1-slim
+			17.1-slim \
+			15.b.3
 LATEST   := $(firstword $(VERSIONS))
 
 GEN_VSNS := $(patsubst %,gen-%,$(VERSIONS))
