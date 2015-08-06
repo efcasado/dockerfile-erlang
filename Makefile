@@ -35,3 +35,5 @@ info:
 	@echo "LATEST   = $(LATEST)"
 	@echo "GEN_VSNS = $(GEN_VSNS)"
 	@echo "BLD_VSNS = $(BLD_VSNS)"
+
+include test.mk
