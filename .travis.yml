@@ -25,4 +25,4 @@ before_script:
 
 script:
       - docker version
-      - make test
+      - bash -c "make test"
