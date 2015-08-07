@@ -1,4 +1,5 @@
 ## Erlang Dockerfile
+[![Build Status](https://travis-ci.org/efcasado/dockerfile-erlang.svg?branch=master)](https://travis-ci.org/efcasado/dockerfile-erlang)
 
 [![nodesource/node](http://dockeri.co/image/efcasado/erlang)](https://registry.hub.docker.com/u/efcasado/erlang/)
 
