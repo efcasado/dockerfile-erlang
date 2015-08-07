@@ -25,8 +25,11 @@ The Docker images are build automatically and published to the public
 [Docker Hub Registry](https://registry.hub.docker.com/u/efcasado/erlang/)
 
 ```
-docker run -it --rm efcasado/erlang
+docker run -it --rm efcasado/erlang[:<tag>]
 ```
+
+where `<tag>` refers to the Erlang version one wants to use.
+
 
 ### Author(s)
 
