@@ -3,7 +3,13 @@
 
 [![nodesource/node](http://dockeri.co/image/efcasado/erlang)](https://registry.hub.docker.com/u/efcasado/erlang/)
 
-This repository contains **Dockerfile** of [Erlang](http://www.erlang.org/) for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/efcasado/erlang/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
+This repository contains a collection of
+[Dockerfile](https://docs.docker.com/reference/builder/)s
+for building [Docker](https://www.docker.com) images of various versions of
+[Erlang](http://www.erlang.org/).
+
+The Docker images are build automatically and published to the public
+[Docker Hub Registry](https://registry.hub.docker.com/u/efcasado/erlang/).
 
 
 ### Base Docker Image
@@ -11,28 +17,41 @@ This repository contains **Dockerfile** of [Erlang](http://www.erlang.org/) for 
 * [ubuntu](https://registry.hub.docker.com/_/ubuntu/)
 
 
-### Installation
+### Using the Erlang Docker images
 
-1. Install [Docker](https://www.docker.com/).
+0. Install [Docker](https://www.docker.com/).
 
-2. Download [automated build](https://registry.hub.docker.com/u/efcasado/erlang/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull efcasado/erlang`.
+1. Pull the Erlang Docker image from the public
+[Docker Hub Registry](https://registry.hub.docker.com/u/efcasado/erlang/)
 
+```
+docker run -it --rm efcasado/erlang
+```
 
-### Usage
+### Author(s)
 
-    docker run -it --rm efcasado/erlang
+- Enrique Fernandez `<efcasado(at)gmail.com>`
 
-##### Run `erl`
+### License
 
-    docker run -it --rm efcasado/erlang erl
-
-
-### Flavours (`normal` and `slim`)
-
-Most Erlang versions are available in two flavors: slim and normal.
-Normal images are built from the `esl-erlang` package provided by
-`Erlang Solutions` and include the Erlang/OTP platform and all of
-its applications. On the other hand, `slim` images are built from
-the `erlang-base` package, which includes the Erlant/OTP platform
-and a minimal set of applications (i.e. `compiler`, `erts`, `kernel`,
-`ose`, `sasl` and `stdlib`).
+> The MIT License (MIT)
+>
+> Copyright (c) 2015 Enrique Fernandez
+>
+> Permission is hereby granted, free of charge, to any person obtaining a copy
+> of this software and associated documentation files (the "Software"), to deal
+> in the Software without restriction, including without limitation the rights
+> to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+> copies of the Software, and to permit persons to whom the Software is
+> furnished to do so, subject to the following conditions:
+>
+> The above copyright notice and this permission notice shall be included in
+> all copies or substantial portions of the Software.
+>
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+> IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+> FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+> AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+> LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+> OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+> THE SOFTWARE.
