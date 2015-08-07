@@ -6,7 +6,7 @@ VERSIONS := 18.0-rc1 \
 			17.3.2-slim \
 			17.1 \
 			17.1-slim \
-			15.b.3
+			R15B03
 LATEST   := $(firstword $(VERSIONS))
 
 GEN_VSNS := $(patsubst %,gen-%,$(VERSIONS))
@@ -28,7 +28,7 @@ gen-%:
 build: $(BLD_VSNS) bld-latest
 
 bld-%:
-	cd $* && docker build -t erlang/$* .
+	cd $* && docker build -t efcasado/erlang:$* .
 
 info:
 	@echo "VERSIONS = $(VERSIONS)"
