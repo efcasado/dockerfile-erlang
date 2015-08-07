@@ -4,9 +4,6 @@ TEST_VSNS := $(patsubst %,test-%,$(VERSIONS))
 
 test: $(TEST_VSNS)
 
-test-%-slim:
-	$(call assert_vsn,$*)
-
 test-%:
 	$(call assert_vsn,$*)
 
@@ -18,9 +15,11 @@ endef
 , := ,
 
 define assert_vsn
-	@if [[ $(1) == R* ]]; then \
-		$(call erl_eval,$(1),"\"$(1)\" = erlang:system_info(otp_release)$(,) halt(0)."); \
+	@VSN=`echo $(1) | sed "s/\(.*\)-slim/\1/g"`; \
+	echo "[TEST] assert_vsn $(1) $$VSN"; \
+	if [[ $$VSN == R* ]]; then \
+		$(call erl_eval,$(1),"\"$$VSN\" = erlang:system_info(otp_release)$(,) halt(0)."); \
 	else \
-		$(call erl_eval,$(1),"{ok$(,) <<\"$(1)\\n\">>} = file:read_file(filename:join([code:root_dir()$(,) \"releases\"$(,) erlang:system_info(otp_release)$(,) \"OTP_VERSION\"]))$(,) halt(0)."); \
+		$(call erl_eval,$(1),"{ok$(,) <<\"$$VSN\\n\">>} = file:read_file(filename:join([code:root_dir()$(,) \"releases\"$(,) erlang:system_info(otp_release)$(,) \"OTP_VERSION\"]))$(,) halt(0)."); \
 	fi
 endef
