@@ -31,6 +31,14 @@ docker run -it --rm efcasado/erlang[:<tag>]
 where `<tag>` refers to the Erlang version one wants to use.
 
 
+### Hello, Docker!
+
+```
+docker run -it --rm efcasado/erlang \
+erl -noshell -eval "io:format(\"Hello, Docker\!~n\")" -s init stop
+```
+
+
 ### Author(s)
 
 - Enrique Fernandez `<efcasado(at)gmail.com>`
