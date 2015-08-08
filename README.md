@@ -19,10 +19,10 @@ The Docker images are build automatically and published to the public
 
 ### Using the Erlang Docker images
 
-0. Install [Docker](https://www.docker.com/).
+1. Install [Docker](https://www.docker.com/).
 
-1. Pull the Erlang Docker image from the public
-[Docker Hub Registry](https://registry.hub.docker.com/u/efcasado/erlang/)
+2. Pull the Erlang Docker image from the public
+[Docker Hub Registry](https://registry.hub.docker.com/u/efcasado/erlang/).
 
 ```
 docker run -it --rm efcasado/erlang[:<tag>]
@@ -34,6 +34,7 @@ where `<tag>` refers to the Erlang version one wants to use.
 ### Author(s)
 
 - Enrique Fernandez `<efcasado(at)gmail.com>`
+
 
 ### License
 
