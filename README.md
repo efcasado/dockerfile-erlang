@@ -1,5 +1,5 @@
 ## Erlang Dockerfile
-[![Build Status](https://travis-ci.org/efcasado/dockerfile-erlang.svg?branch=master)](https://travis-ci.org/efcasado/dockerfile-erlang)
+[![Build Status](https://travis-ci.org/efcasado/dockerfile-erlang.svg?branch=master)](https://travis-ci.org/efcasado/dockerfile-erlang) [![Layers](https://badge.imagelayers.io/efcasado/erlang:latest.svg)](https://imagelayers.io/?images=efcasado/erlang:latest 'Get your own badge on imagelayers.io')
 
 [![nodesource/node](http://dockeri.co/image/efcasado/erlang)](https://registry.hub.docker.com/u/efcasado/erlang/)
 
